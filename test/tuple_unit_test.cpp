@@ -13,6 +13,7 @@ TEST(isVectorTest, true) {
  //tuple_t testTupleVector{.x = 4.3, .y = -4.2, .z = 3.1, .w = 0};
  //tuple_t testTuplePoint{.x = 4.3, .y = -4.2, .z = 3.1, .w = 1.0};
  testTupleVector = newPoint(4.3, -4.2, 3.1); 
+ testTupleVector = newVector(4.3, -4.2, 3.1);
 
  EXPECT_EQ(true, isVector(testTupleVector));
  //EXPECT_EQ(true, isVector(testTuplePoint));
@@ -59,15 +60,3 @@ TEST(isVectorTest, true) {
 //   EXPECT_TRUE(IsPrime(23));
 // }
 }  // namespace
-
-// // Step 3. Call RUN_ALL_TESTS() in main().
-// //
-// // We do this by linking in src/gtest_main.cc file, which consists of
-// // a main() function which calls RUN_ALL_TESTS() for us.
-// //
-// // This runs all the tests you've defined, prints the result, and
-// // returns 0 if successful, or 1 otherwise.
-// //
-// // Did you notice that we didn't register the tests?  The
-// // RUN_ALL_TESTS() macro magically knows about all the tests we
-// // defined.  Isn't this convenient?

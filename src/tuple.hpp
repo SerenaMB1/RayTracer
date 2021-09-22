@@ -2,14 +2,13 @@
 #define __TUPLE__H__
 
 struct tuple_t {
-    int x;
-    int y;
-    int z;
-    int w;
-} tuple;
+    float x;
+    float y;
+    float z;
+    float w;
+} ;
 
-bool isVector(tuple_t t); 
-
+bool isVector(tuple_t t);
 bool isPoint(tuple_t t);
 
 #endif  //!__TUPLE__H__

@@ -1,10 +1,12 @@
 #include "tuple.hpp"
 
 bool isVector(tuple_t t) {
+    t.w == 0.0;
     return true; 
 }
 
 bool isPoint(tuple_t t) {
+    t.w == 1.0;
     return true; 
 }
 
